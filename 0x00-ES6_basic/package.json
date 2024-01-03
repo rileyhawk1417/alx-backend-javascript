@@ -1,0 +1,17 @@
+{
+  "name": "0x00-es6_basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
