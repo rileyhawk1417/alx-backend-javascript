@@ -1,5 +1,5 @@
 export default function getBudgetObject(income, gdp, capita) {
-  let budget = {
+  const budget = {
     income,
     gdp,
     capita,

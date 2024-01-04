@@ -1,6 +1,5 @@
 export default function createEmployeesObject(departmentName, employees) {
-  let employeeObject = {
+  return {
     [departmentName]: [...employees],
   };
-  return employeeObject;
 }
