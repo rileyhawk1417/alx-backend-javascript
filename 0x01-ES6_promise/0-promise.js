@@ -1,3 +1,3 @@
-export default async function getResponseFactor(){
-return true
+export default async function getResponseFactor() {
+  return new Promise(() => {});
 }
