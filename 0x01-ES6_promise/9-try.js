@@ -5,6 +5,6 @@ export default function guardrail(mathFunction) {
   } catch (err) {
     queue.push(String(err));
   } finally {
-    queue.push("Guardrail was processed");
+    queue.push('Guardrail was processed');
   }
 }
