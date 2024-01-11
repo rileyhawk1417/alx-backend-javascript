@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import Currency from "./3-currency";
 
 export default class Pricing {
@@ -23,7 +24,7 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${this._amount} ${this._currency._name} ${this._currency._code}`;
+    return `${this._amount} ${this._currency.displayFullCurrency()}`;
   }
 
   static convertPrice(amount, conversionRate) {
