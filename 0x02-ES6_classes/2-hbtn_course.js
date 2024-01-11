@@ -1,11 +1,17 @@
 export default class HolbertonCourse {
   constructor(name, length, students) {
-    if (typeof name !== "string") throw TypeError("name must be a string");
-    if (typeof length !== "number") throw TypeError("length must be a number");
-    if (!Array.isArray(students)) throw TypeError("name must be an Array");
+    if (typeof name !== 'string') {
+      throw TypeError('name must be a string');
+    }
+    if (typeof length !== 'number') {
+      throw TypeError('length must be a number');
+    }
+    if (!Array.isArray(students)) {
+      throw TypeError('name must be an Array');
+    }
     for (const student of students) {
-      if (typeof student !== "string")
-        throw TypeError("students must contain strings");
+      if (typeof student !== 'string')
+        throw TypeError('students must contain strings');
     }
     this._name = name;
     this._length = length;
@@ -17,7 +23,9 @@ export default class HolbertonCourse {
   }
 
   set name(name) {
-    if (typeof name !== "string") throw TypeError("name must be a string");
+    if (typeof name !== 'string') {
+      throw TypeError('name must be a string');
+    }
     this._name = name;
   }
 
@@ -26,7 +34,9 @@ export default class HolbertonCourse {
   }
 
   set length(length) {
-    if (typeof length !== "number") throw TypeError("length must be a number");
+    if (typeof length !== 'number') {
+      throw TypeError('length must be a number');
+    }
     this._length = length;
   }
 
@@ -35,10 +45,13 @@ export default class HolbertonCourse {
   }
 
   set students(students) {
-    if (!Array.isArray(students)) throw TypeError("students must be an Array");
+    if (!Array.isArray(students)) {
+      throw TypeError('students must be an Array');
+    }
     for (const student of students) {
-      if (typeof student !== "string")
-        throw TypeError("students must contain strings");
+      if (typeof student !== 'string') {
+        throw TypeError('students must contain strings');
+      }
     }
     this._students = students;
   }
