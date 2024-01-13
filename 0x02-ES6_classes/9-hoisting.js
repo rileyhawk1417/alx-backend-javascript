@@ -11,6 +11,14 @@ export class HolbertonClass {
   set year(year) {
     this._year = year;
   }
+
+  get location() {
+    return this._location;
+  }
+
+  set location(location) {
+    this._location = location;
+  }
 }
 
 const class2019 = new HolbertonClass(2019, 'San Francisco');
