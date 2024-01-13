@@ -7,19 +7,19 @@ export default class Pricing {
     this._currency = currency;
   }
 
-  get _amount() {
+  get amount() {
     return this._amount;
   }
 
-  set _amount(amount) {
+  set amount(amount) {
     this._amount = amount;
   }
 
-  get _currency() {
+  get currency() {
     return this._currency;
   }
 
-  set _currency(currency) {
+  set currency(currency) {
     this._currency = currency;
   }
 
