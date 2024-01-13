@@ -11,16 +11,16 @@ export default class Pricing {
     return this._amount;
   }
 
-  set _amount(x) {
-    this._amount = x;
+  set _amount(amount) {
+    this._amount = amount;
   }
 
   get _currency() {
     return this._currency;
   }
 
-  set _currency(x) {
-    this._currency = x;
+  set _currency(currency) {
+    this._currency = currency;
   }
 
   displayFullPrice() {
