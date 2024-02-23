@@ -1,6 +1,6 @@
 export default function iterateThroughObject(reportWithIterator) {
-  let idx = reportWithIterator.next();
-  let res = "";
+  const idx = reportWithIterator.next();
+  let res = '';
   while (!idx.done) {
     res += `${idx.value} | `;
     res = reportWithIterator.next();
