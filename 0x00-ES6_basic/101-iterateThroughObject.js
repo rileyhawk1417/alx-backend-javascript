@@ -1,9 +1,14 @@
+/* es-lint-disable */
+
 export default function iterateThroughObject(reportWithIterator) {
-  const idx = reportWithIterator.next();
-  let res = '';
-  while (!idx.done) {
-    res += `${idx.value} | `;
-    res = reportWithIterator.next();
+  let data = "";
+  for (let idx = 0; idx < reportWithIterator.length; i++) {
+    const employee = reportWithIterator[idx];
+    if (idx === reportWithIterator.length - 1) {
+      data += employee;
+    } else {
+      data += `${employee} | `;
+    }
   }
-  return res.slice(0, res.length - 3);
+  return data;
 }
