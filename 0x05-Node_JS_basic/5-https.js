@@ -24,8 +24,6 @@ app.on("request", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}/`);
-});
+app.listen(port);
 
 module.exports = app;

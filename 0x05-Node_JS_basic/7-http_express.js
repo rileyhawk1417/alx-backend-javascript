@@ -13,10 +13,10 @@ app.get("/students", async (req, res) => {
     const data = await countStudents(process.argv[2]);
     res.send(`${intro}${data.join("\n")}`).statusCode = 200;
   } catch (err) {
-    res.send(err.message).statusCode = 404;
+    res.send(err.message).statusCode = 500;
   }
 });
 
-app.listen(port, (req, res) => {
-  console.log("Running on localhost:1245");
-});
+app.listen(port);
+
+module.exports = app;
