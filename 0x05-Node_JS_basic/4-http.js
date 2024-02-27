@@ -1,5 +1,4 @@
 const http = require("http");
-const { hostname } = require("os");
 const port = 1245;
 
 const app = http.createServer((req, res) => {
@@ -9,7 +8,7 @@ const app = http.createServer((req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running on http://${hostname()}:${port}/`);
+  console.log(`Server running on http://localhost:${port}/`);
 });
 
 module.exports = app;
