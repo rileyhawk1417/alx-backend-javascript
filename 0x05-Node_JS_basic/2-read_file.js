@@ -18,6 +18,8 @@ function countStudents(arg) {
 
     for (const idx of modifiedArray) {
       if (idx.lastIndexOf(',')) {
+        if (!locArray.includes(locFinder(idx))) {
+          locArray.push(locFinder(idx));
         }
       }
 
@@ -41,8 +43,8 @@ function countStudents(arg) {
       }. List: ${studentArraySWE.join(', ')}`,
     );
   } catch (err) {
-    throw new Error('Cannot load the database');
+    console.error('Cannot load the database');
   }
 }
 
-module.exports = countStudents;
+module.exports = countStudents
