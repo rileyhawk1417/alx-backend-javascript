@@ -34,18 +34,27 @@ async function countStudents(arg) {
             studentArraySWE.push(idx.substring(0, idx.indexOf(",")));
           }
         }
-        console.log(`Number of students: ${modifiedArray.length}`),
-          console.log(
-            `Number of students in CS: ${
-              studentArrayCS.length
-            }. List: ${studentArrayCS.join(", ")}`,
-          ),
-          console.log(
-            `Number of students in SWE: ${
-              studentArraySWE.length
-            }. List: ${studentArraySWE.join(", ")}`,
-          ),
-          resolve();
+        console.log(`Number of students: ${modifiedArray.length}`);
+        console.log(
+          `Number of students in CS: ${
+            studentArrayCS.length
+          }. List: ${studentArrayCS.join(", ")}`,
+        );
+        console.log(
+          `Number of students in SWE: ${
+            studentArraySWE.length
+          }. List: ${studentArraySWE.join(", ")}`,
+        );
+        let data = [
+          `Number of students: ${modifiedArray.length}`,
+          `Number of students in CS: ${
+            studentArrayCS.length
+          }. List: ${studentArrayCS.join(", ")}`,
+          `Number of students in SWE: ${
+            studentArraySWE.length
+          }. List: ${studentArraySWE.join(", ")}`,
+        ];
+        resolve(data);
       }
     });
   });
