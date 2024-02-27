@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-
+/*
+ * NOTE: There is nothing wrong with this code it works.
 const readline = require('readline').createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -16,5 +17,15 @@ function mainLoop() {
     },
   );
 }
+*/
 
-mainLoop();
+process.stdout.write('Welcome to Holberton school, what is your name?\n');
+process.stdin.on('readable', () => {
+  const userName = process.stdin.read();
+  if (userName !== null) {
+    process.stdout.write(`Your name is: ${userName}`);
+  }
+});
+process.on('exit', () => {
+  process.stdout.write('This important software is now closing\n');
+});

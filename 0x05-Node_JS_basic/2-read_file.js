@@ -47,4 +47,4 @@ function countStudents(arg) {
   }
 }
 
-module.exports = countStudents
+module.exports = countStudents;
