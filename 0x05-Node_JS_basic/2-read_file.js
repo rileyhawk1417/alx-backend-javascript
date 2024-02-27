@@ -43,7 +43,7 @@ function countStudents(arg) {
       }. List: ${studentArraySWE.join(', ')}`,
     );
   } catch (err) {
-    console.error('Cannot load the database');
+    throw new Error('Cannot load the database');
   }
 }
 
