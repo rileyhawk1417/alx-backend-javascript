@@ -14,7 +14,7 @@ app.get('/students', async (req, res) => {
     const data = await countStudents(process.argv[2]);
     res.send(`${intro}${data.join('\n')}`).statusCode = 200;
   } catch (err) {
-    res.send(err.message).statusCode = 500;
+    res.send(`${intro}Cannot load the database`).statusCode = 500;
   }
 });
 

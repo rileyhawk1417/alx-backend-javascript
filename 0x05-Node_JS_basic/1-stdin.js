@@ -23,7 +23,7 @@ process.stdout.write('Welcome to Holberton school, what is your name?\n');
 process.stdin.on('readable', () => {
   const userName = process.stdin.read();
   if (userName !== null) {
-    process.stdout.write(`Your name is: ${userName}`);
+    process.stdout.write(`Your name is: ${userName}\r`);
   }
 });
 process.on('exit', () => {
